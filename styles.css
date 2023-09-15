@@ -1,0 +1,120 @@
+/*Estilos
+General
+Agregar al body la siguiente propiedad: margin: 0.
+Agregar una tipografía de Google Fonts al body.
+Poner a .section la propiedad: height: 100%.
+Agregar y/o sacar paddings y márgenes dónde lo vean necesario para que no queden tan pegados los elementos, por ejemplo en:
+.header
+.section
+.skill
+íconos de contacto
+.footer
+Hacer que los íconos queden dentro de un círculos. Para eso:
+incluirlos dentro de un div
+dar un ancho y un alto
+dar un color de fondo
+dar un color de texto que contraste
+dar un border-radius de 50%
+centrarlos con flex
+Header
+Poner a .header con display: flex y justify-content: space-between.
+Poner a .nav display: flex.
+Sacar los estilos por defecto de ul.
+Hacer que los links lleven a las respectivas secciones al clickearlos.
+Sacar el subrayado por defecto de los links.
+About
+Usar flex de modo que el texto de #about quede centrado verticalmente y horizontalmente a la izquierda.
+Skills
+Dar a #skills un color de fondo diferente (por ejemplo #F5F5F5).
+Usar flex de modo que el contenido de #skills quede centrado verticalmente y horizontalmente.
+Dar a .skill un ancho de 250px, un borde y un margen para que no quede pegado a los demás.
+Usar flex en .skills-container de modo que cada skill quede una al lado de la otra.
+Contact
+Usar flex de modo que el contenido de #contact quede centrado verticalmente y horizontalmente.
+Usar flex de modo que los íconos queden en línea y centrados horizontalmente.
+Footer
+Usar flex de modo que el texto de .footer quede centrado verticalmente y horizontalmente.
+Dar al texto un tamaño de letra pequeño y un color de más claro que el resto de la página.*/
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.nav{
+    display: flex;
+    list-style: none;
+}
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(18, 2, 48);
+}
+.section{
+    height: 100%;
+    margin: 30px 20px;
+    padding: 10px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid rgb(119, 115, 115);
+}
+.section h1{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.section a{
+    margin: 10px 3px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(29, 5, 161);
+    color: rgb(244, 247, 250);
+    border-radius: 50%;
+}
+.social-icons a{
+    color: rgb(29, 5, 161);;
+}
+#about{
+    justify-content: center;
+    text-align: left;
+    margin: 25px;
+}
+#skills{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #e9dddd;
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

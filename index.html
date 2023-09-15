@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/bdec5d58ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Estructura
+index.html debe contener:
+
+un div con clase header que contenga
+un ícono
+un ul con clase nav que contenga
+3 li, cada uno con un link dentro suyo
+agregar a cada link, en orden, uno de los siguiente textos:
+SOBRE MI
+HABILIDADES
+CONTACTO
+un div con clase section y id about que contenga
+un título h1 con un saludo de presentación
+un párrafo p
+un div con clase section y id skills que contenga
+un título h2 que diga Mis habilidades
+un div con clase skills-container que contenga 3 habilidades, las cuales que estar formadas por:
+div con clase skill, que contenga
+un ícono
+un título h3
+un párrafo p
+un div con clase section y id contact que contenga
+un título h2 que diga Contacto
+un div con clase social-icons que contenga
+4 íconos de redes sociales (Linkedin, Github, etc). Cada ícono debe estar dentro de un link que lleve a una página externa (la de la red social)
+un div con clase footer contenga
+un párrafo p que diga: Hecho con ❤️ por ... reemplazando los puntos suspensivos por sus nombres
+
+- Para los párrafos usar lorem ipsum.
+- Para los títulos que no lo indiquen usar lorem ipsum.
+- Para los íconos, buscar cualquier ícono en Font Awesome.
+- Agregar las clases necesarias en los elementos en los que no esté indicado (para dar estilos).-->
+    <div class="header">
+      <div class="icon">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+      <ul class="nav">
+        <li><a href="#about">SOBRE MI</a></li>
+        <li><a href="#skills">HABILIDADES</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+    <div class="section" id="about">
+      <h1>Hola! Mi nombre es Natalia</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur,
+        saepe magni aperiam atque debitis accusantium repellendus corrupti vero
+        optio beatae sunt ea tenetur, expedita repellat laboriosam totam error
+        suscipit corporis?
+      </p>
+    </div>
+    <div class="section" id="skills">
+      <h2>Mis habilidades</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            accusamus fugiat, dignissimos consectetur consequuntur labore ea
+            voluptas, minus laborum natus quas iusto, dolore delectus molestiae
+            deserunt. Voluptatibus ipsam voluptatem temporibus?
+          </p>
+        </div>
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            accusamus fugiat, dignissimos consectetur consequuntur labore ea
+            voluptas, minus laborum natus quas iusto, dolore delectus molestiae
+            deserunt. Voluptatibus ipsam voluptatem temporibus?
+          </p>
+        </div>
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            accusamus fugiat, dignissimos consectetur consequuntur labore ea
+            voluptas, minus laborum natus quas iusto, dolore delectus molestiae
+            deserunt. Voluptatibus ipsam voluptatem temporibus?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h2>Contacto</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Natalia-Schwindt"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/natyschwindt"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/natalia.schwindt/?hl=es"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Hecho con ❤️ por Natalia Schwindt</p>
+    </div>
+  </body>
+</html>
